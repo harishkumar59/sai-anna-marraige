@@ -1,0 +1,79 @@
+
+import qrcode
+
+url = "https://cozy-hummingbird-6cbb04.netlify.app/"
+
+qr = qrcode.make(url)
+qr.save("website_qr.png")
+
+print("QR code created and saved as website_qr.png")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+element.style {
+}
+body {
+    background: #fffbe9;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+<style>
+body {
+    transition: opacity ease-in 0.2s;
+}
+injected stylesheet
+body {
+    margin-top: 0px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+injected stylesheet
+*, html {
+    scroll-behavior: auto !important;
+}
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
+:root {
+    --primary-color: #ffc400;
+}
+injected stylesheet
+:root, #speechify-header-hover-button-container, #speechify-player, #speechify-listening-nudge, #speechify-feedback-form, #speechify-sidepanel-root {
+    --speechify-primary-color: #2137fc;
+    --font-family: ABCDiatype;
+    --transitions: none;
+}
+<style>
+@font-face {
+    font-family: Roboto;
+    src: url(chrome-extension://meimoidfecamngeoanhnpdjjdcefoldn/assets/fonts/Roboto-Regular.ttf);
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Kumar & Anjali — Wedding Invitation</title>
+    <meta name="description"
+        content="You are cordially invited to the wedding ceremony of Sai Kumar & Anjali on 6th March 2026.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Version 1: Great Vibes
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    -->
+    <!-- Version 2: Alex Brush -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating Petals Canvas -->
+    <canvas id="petalsCanvas"></canvas>
+
+    <!-- ━━━━━━ HERO / OPENING ━━━━━━ -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">We Are Getting Married</p>
+            <div class="ornament-line"><span></span><span class="ornament-icon">✦</span><span></span></div>
+           
+            <h1 class="hero-names">Sai Kumar <span class="amp">&amp;</span> Anjali</h1>
+            <div class="ornament-line"><span></span><span class="ornament-icon">✦</span><span></span></div>
+            <p class="hero-date">FRIDAY &bull; 6<sup>TH</sup> MARCH &bull; 2026</p>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- ━━━━━━ INVITATION MESSAGE ━━━━━━ -->
+    <section class="invite-section" id="invitation">
+        <div class="section-inner">
+            <p class="section-tag">With the blessings of the Almighty and our beloved families</p>
+            <h2 class="section-heading" style="font-family: 'Cormorant Garamond', serif; font-weight: 700;">You're
+                Cordially Invited</h2>
+            <div class="ornament-divider">✦ ✦ ✦</div>
+            <p class="invite-text">
+                We joyfully invite you to the wedding of <strong>Sai Kumar</strong> &amp; <strong>Anjali</strong> as
+                they begin their beautiful journey of togetherness ✨🌸
+            </p>
+            <p class="invite-text">
+                Your presence and blessings will make our special day truly memorable 🙏💖🎉
+            </p>
+        </div>
+    </section>
+
+    <!-- ━━━━━━ COUPLE IMAGE ━━━━━━ -->
+    <section class="couple-section" id="couple">
+        <div class="couple-frame">
+            <img src="Transparent.png" alt="Sai Kumar & Anjali" class="couple-image" id="parallaxImage">
+        </div>
+        <div class="couple-names-below">
+            <span class="name-groom">Sai Kumar</span>
+            <span class="name-sep">&hearts;</span>
+            <span class="name-bride">Anjali</span>
+        </div>
+        <p class="footer-tagline">"Two souls, one heart, forever united."</p>
+    </section>
+
+    <!-- ━━━━━━ COUNTDOWN TIMER ━━━━━━ -->
+    <section class="countdown-section" id="countdown">
+        <h2 class="section-heading">Counting Every Moment</h2>
+        <div class="ornament-divider">✦ ✦ ✦</div>
+        <div class="countdown-boxes">
+            <div class="countdown-box">
+                <span class="count-number" id="countDays">00</span>
+                <span class="count-label">Days</span>
+            </div>
+            <div class="countdown-box">
+                <span class="count-number" id="countHours">00</span>
+                <span class="count-label">Hours</span>
+            </div>
+            <div class="countdown-box">
+                <span class="count-number" id="countMinutes">00</span>
+                <span class="count-label">Minutes</span>
+            </div>
+            <div class="countdown-box">
+                <span class="count-number" id="countSeconds">00</span>
+                <span class="count-label">Seconds</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━━━━ TIMELINE / SCHEDULE ━━━━━━
+    <section class="timeline-section" id="timeline">
+        <h2 class="section-heading">Wedding Day Timeline</h2>
+        <div class="ornament-divider">✦ ✦ ✦</div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">🪷</div>
+                <div class="timeline-content">
+                    <h3>Haldi Ceremony</h3>
+                    <p>Morning Rituals &amp; Blessings</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">💐</div>
+                <div class="timeline-content">
+                    <h3>Baraat &amp; Welcome</h3>
+                    <p>Grand Procession &amp; Reception</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🔥</div>
+                <div class="timeline-content">
+                    <h3>Wedding Ceremony</h3>
+                    <p>Sacred Vows &amp; Rituals</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🍽️</div>
+                <div class="timeline-content">
+                    <h3>Grand Feast</h3>
+                    <p>Celebration Dinner &amp; Festivities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    ━━━━━━ END TIMELINE / SCHEDULE ━━━━━━ -->
+
+    <!-- ━━━━━━ VENUE ━━━━━━ -->
+    <section class="venue-section" id="venue">
+        <h2 class="section-heading">Venue</h2>
+        <div class="ornament-divider">✦ ✦ ✦</div>
+        <div class="venue-card">
+            <div class="venue-icon">🏛️</div>
+            <h3 class="venue-name">Chelmedis Function Hall</h3>
+            <p class="venue-address">PAMUKUNTA ROAD, RAJAPETA, Yadadri District, TELANGANA 508105</p>
+        </div>
+    </section>
+
+    <!-- ━━━━━━ LOCATION MAP ━━━━━━ -->
+    <section class="map-section" id="location">
+        <h2 class="section-heading">📍 Find Us Here</h2>
+        <div class="ornament-divider">✦ ✦ ✦</div>
+        <div class="map-wrapper" onclick="window.open('https://maps.app.goo.gl/VMcYxxrKQNQ8uUMo7', '_blank')">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.7029345431383!2d78.90558957494375!3d17.758327183193437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc9d90467d2dd5%3A0xc8966f0b994fab67!2sChelmedis%20function%20hall!5e1!3m2!1sen!2sin!4v1771009279743!5m2!1sen!2sin"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-click-overlay"></div>
+        </div>
+    </section>
+
+    <!-- ━━━━━━ RSVP / BLESSINGS ━━━━━━ -->
+    <section class="rsvp-section" id="rsvp">
+        <div class="section-inner">
+            <h2 class="section-heading light">Send Your Blessings</h2>
+            <div class="ornament-divider light">✦ ✦ ✦</div>
+            <p class="rsvp-text">Your presence is the greatest gift. Share your warm wishes for the couple!</p>
+            <div class="rsvp-buttons">
+                <a href="https://wa.me/+918454910395?text=Congratulations%20on%20the%20wedding!%20Wishing%20you%20both%20a%20lifetime%20of%20love%20and%20happiness!%20💐🎊"
+                    target="_blank" class="btn btn-whatsapp" id="btnWhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.031-.967-.273-.099-.471-.148-.67.15-.197.297-.767.967-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.363.71.306 1.263.488 1.695.624.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"
+                            fill="#fff" />
+                        <path
+                            d="M12.004 2C6.477 2 2 6.477 2 12.004c0 1.657.433 3.263 1.254 4.674L2 22l5.456-1.234A9.944 9.944 0 0 0 12.004 22C17.523 22 22 17.523 22 12.004 22 6.477 17.523 2 12.004 2zm5.634 14.634c-.253.697-1.482 1.377-2.047 1.463-.546.082-1.226.117-1.978-.121-.451-.143-1.027-.332-1.771-.646-3.021-1.243-4.984-4.309-5.143-4.515-.149-.198-1.229-1.637-1.229-3.127 0-1.49.79-2.222 1.073-2.522.283-.3.614-.375.82-.375.206 0 .412.002.59.011.19.009.445-.072.701.552.253.617.807 2.004.872 2.149.064.146.107.316.02.512-.085.197-.126.317-.248.462-.123.146-.262.29-.374.406-.123.123-.25.256-.107.5.142.244.634 1.048 1.36 1.693.934.83 1.725 1.098 1.97 1.222.246.123.389.104.533-.062.142-.165.616-.716.78-.963.165-.247.33-.205.557-.123.228.082 1.444.682 1.69.807.246.123.41.185.47.29.061.104.061.602-.192 1.299z"
+                            fill="#25D366" />
+                    </svg>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="tel:+918454910395" class="btn btn-call" id="btnCall">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+                            fill="#fff" />
+                    </svg>
+                    <span>Call Us</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━━━━ FOOTER ━━━━━━ -->
+    <footer class="footer">
+        <!-- <div class="footer-names">Sai Kumar & Anjali</div> -->
+        <!-- <p class="footer-date">6<sup>th</sup> March 2026</p> -->
+        <div class="ornament-divider light small">✦</div>
+        <p class="footer-tagline">"Two souls, one heart, forever united."</p>
+    </footer>
+
+    <!-- Contact Us (for invitation creator) -->
+    <div class="creator-section">
+        <p>Want a beautiful invitation like this?</p>
+        <div class="creator-buttons">
+            <a href="https://wa.me/+918454910395?text=Hello%2C%20I%20am%20interested%20in%20your%20invitation%20services%21"
+                target="_blank" class="creator-btn creator-whatsapp" id="creatorWhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.031-.967-.273-.099-.471-.148-.67.15-.197.297-.767.967-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.363.71.306 1.263.488 1.695.624.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"
+                        fill="#25D366" />
+                    <path
+                        d="M12.004 2C6.477 2 2 6.477 2 12.004c0 1.657.433 3.263 1.254 4.674L2 22l5.456-1.234A9.944 9.944 0 0 0 12.004 22C17.523 22 22 17.523 22 12.004 22 6.477 17.523 2 12.004 2zm5.634 14.634c-.253.697-1.482 1.377-2.047 1.463-.546.082-1.226.117-1.978-.121-.451-.143-1.027-.332-1.771-.646-3.021-1.243-4.984-4.309-5.143-4.515-.149-.198-1.229-1.637-1.229-3.127 0-1.49.79-2.222 1.073-2.522.283-.3.614-.375.82-.375.206 0 .412.002.59.011.19.009.445-.072.701.552.253.617.807 2.004.872 2.149.064.146.107.316.02.512-.085.197-.126.317-.248.462-.123.146-.262.29-.374.406-.123.123-.25.256-.107.5.142.244.634 1.048 1.36 1.693.934.83 1.725 1.098 1.97 1.222.246.123.389.104.533-.062.142-.165.616-.716.78-.963.165-.247.33-.205.557-.123.228.082 1.444.682 1.69.807.246.123.41.185.47.29.061.104.061.602-.192 1.299z"
+                        fill="#25D366" />
+                </svg>
+                <span>WhatsApp</span>
+            </a>
+            <a href="tel:+918454910395" class="creator-btn creator-call" id="creatorCall">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+                        fill="#fff" />
+                </svg>
+                <span>Call Us</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

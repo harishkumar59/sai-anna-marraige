@@ -221,6 +221,24 @@ section {
     animation: fadeInScale 1.2s ease 0.6s forwards;
 }
 
+.hero-names .name-first,
+.hero-names .name-second {
+    background: linear-gradient(90deg,
+            #f0d48a 0%,
+            #fff8e7 15%,
+            #d4a853 30%,
+            #ffe6a0 50%,
+            #d4a853 70%,
+            #fff8e7 85%,
+            #f0d48a 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmerGlitter 3s linear infinite;
+    filter: drop-shadow(0 0 8px rgba(212, 168, 83, 0.4)) drop-shadow(0 0 20px rgba(240, 212, 138, 0.2));
+}
+
 .hero-names .amp {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
@@ -860,6 +878,16 @@ section {
 
     50% {
         transform: translateY(-8px);
+    }
+}
+
+@keyframes shimmerGlitter {
+    0% {
+        background-position: 200% center;
+    }
+
+    100% {
+        background-position: -200% center;
     }
 }
 

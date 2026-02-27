@@ -223,9 +223,10 @@ section {
 
 .hero-names .amp {
     display: inline-block;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 0.55em;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.45em;
     color: var(--gold-light);
     margin: 0 8px;
     vertical-align: middle;
@@ -943,6 +944,23 @@ section {
 
     .hero-names {
         font-size: clamp(2.2rem, 11vw, 3.8rem);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .hero-names .name-first {
+        margin-right: 6px;
+    }
+
+    .hero-names .amp {
+        margin: 0 2px;
+    }
+
+    .hero-names .name-second {
+        width: 100%;
+        text-align: center;
     }
 
     .hero-date {

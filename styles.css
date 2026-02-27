@@ -945,22 +945,22 @@ section {
     .hero-names {
         font-size: clamp(2.2rem, 11vw, 3.8rem);
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: baseline;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .hero-names .name-first {
-        margin-right: 6px;
+    .hero-names .name-first,
+    .hero-names .name-second {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     .hero-names .amp {
-        margin: 0 2px;
-    }
-
-    .hero-names .name-second {
+        display: block;
         width: 100%;
         text-align: center;
+        margin: 4px 0;
     }
 
     .hero-date {
